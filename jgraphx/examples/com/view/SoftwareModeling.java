@@ -147,73 +147,70 @@ public class SoftwareModeling extends BasicGraphEditor {
 
         });
 
-        // Adds some template cells for dropping into the graph
-        // addTemplate("图元名称",image,"style",280,280,user object)
-        shapesPalette// 开始或结束
-                .addTemplate("renyuan",
-                        new ImageIcon(
-                                SoftwareModeling.class.getResource("/com/mxgraph/examples/swing/images/rounded.png")),
-                        "renyuan", 70, 40, "开始或结束");
         shapesPalette// 软件步骤
-                .addTemplate("tuwenziliao",
+                .addTemplate("求解活动情景",
                         new ImageIcon(
-                                SoftwareModeling.class.getResource("/com/mxgraph/examples/swing/images/rounded.png")),
-                        "tuwenziliao", 70, 40, "软件步骤");
+                                SoftwareModelingThree.class.getResource("/com/mxgraph/examples/swing/images/qiujiehuodong.png")),
+                        "roundImage;image=/com/mxgraph/examples/swing/images/qiujiehuodong.png;one", 70, 40, "求解活动情景");
+        shapesPalette
+                .addEdgeTemplate(
+                        "直线",
+                        new ImageIcon(
+                                SoftwareModelingThree.class
+                                        .getResource("/com/mxgraph/examples/swing/images/straight.png")),
+                        "straight", 100, 100, "");
+        shapesPalette// 软件步骤
+                .addTemplate("知识单元",
+                        new ImageIcon(
+                                SoftwareModelingThree.class.getResource("/com/mxgraph/examples/swing/images/知识单元.png")),
+                        "roundImage;image=/com/mxgraph/examples/swing/images/知识单元.png;knowledge", 70, 40, "知识单元");
+        shapesPalette.addTemplate("业务活动",
+                new ImageIcon(SoftwareModelingThree.class.getResource("/com/mxgraph/examples/swing/images/业务活动.png")),
+                "rounded=1;two", 70, 40, "业务活动");
+        shapesPalette.addTemplate("图文资料",
+                new ImageIcon(SoftwareModelingThree.class.getResource("/com/mxgraph/examples/swing/images/图文资料.png")),
+                "roundImage;image=/com/mxgraph/examples/swing/images/图文资料.png;tuwenziliao", 70, 70, "图文资料");
+        shapesPalette.addTemplate("异或",
+                new ImageIcon(SoftwareModelingThree.class.getResource("/com/mxgraph/examples/swing/images/异或.png")),
+                "roundImage;image=/com/mxgraph/examples/swing/images/异或.png", 50, 50, "异或");
 
-        // 定义带箭头的线
-        shapesPalette.addEdgeTemplate("jisuanjiziyuan",
-                new ImageIcon(SoftwareModeling.class.getResource("/com/mxgraph/examples/swing/images/dug.png")),
-                "jisuanjiziyuan", 40, 40, "");
-        shapesPalette.addEdgeTemplate("ruanjianshebei",
-                new ImageIcon(SoftwareModeling.class.getResource("/com/mxgraph/examples/swing/images/vertical.png")),
-                "ruanjianshebei", 40, 40, "");
-        shapesPalette.addTemplate("ruanjianshebei",
-                new ImageIcon(SoftwareModeling.class.getResource("/com/mxgraph/examples/swing/images/swimlane.png")),
-                "yingjianshebei", 280, 280, "容器");
-        shapesPalette.addTemplate("knowledge",
-                new ImageIcon(SoftwareModeling.class.getResource("/com/mxgraph/examples/swing/images/rounded.png")),
-                "knowledge", 70, 70, "Icon");
-        shapesPalette.addTemplate("Label",
-                new ImageIcon(SoftwareModeling.class.getResource("/com/mxgraph/examples/swing/images/rounded.png")),
-                "label;image=/com/mxgraph/examples/swing/images/gear.png", 130, 50, "Label");
-        shapesPalette.addTemplate("Rectangle",
-                new ImageIcon(SoftwareModeling.class.getResource("/com/mxgraph/examples/swing/images/rectangle.png")),
-                null, 160, 120, "");
-        shapesPalette.addTemplate("Rounded Rectangle",
-                new ImageIcon(SoftwareModeling.class.getResource("/com/mxgraph/examples/swing/images/rounded.png")),
-                "rounded=1", 160, 120, "");
-        shapesPalette.addTemplate("Ellipse",
-                new ImageIcon(SoftwareModeling.class.getResource("/com/mxgraph/examples/swing/images/ellipse.png")),
-                "ellipse", 160, 160, "");
-        shapesPalette.addTemplate("Double Ellipse",
-                new ImageIcon(
-                        SoftwareModeling.class.getResource("/com/mxgraph/examples/swing/images/doubleellipse.png")),
-                "ellipse;shape=doubleEllipse", 160, 160, "");
-        shapesPalette.addTemplate("Triangle",
-                new ImageIcon(SoftwareModeling.class.getResource("/com/mxgraph/examples/swing/images/triangle.png")),
-                "triangle", 120, 160, "");
-        shapesPalette.addTemplate("Rhombus",
-                new ImageIcon(SoftwareModeling.class.getResource("/com/mxgraph/examples/swing/images/rhombus.png")),
-                "rhombus", 160, 160, "");
-        shapesPalette.addTemplate("Horizontal Line",
-                new ImageIcon(SoftwareModeling.class.getResource("/com/mxgraph/examples/swing/images/hline.png")),
-                "line", 160, 10, "");
-        shapesPalette.addTemplate("Hexagon",
-                new ImageIcon(SoftwareModeling.class.getResource("/com/mxgraph/examples/swing/images/hexagon.png")),
-                "shape=hexagon", 160, 120, "");
-        shapesPalette.addTemplate("Cylinder",
-                new ImageIcon(SoftwareModeling.class.getResource("/com/mxgraph/examples/swing/images/cylinder.png")),
-                "shape=cylinder", 120, 160, "");
-        shapesPalette.addTemplate("Actor",
-                new ImageIcon(SoftwareModeling.class.getResource("/com/mxgraph/examples/swing/images/actor.png")),
-                "shape=actor", 120, 160, "");
-        shapesPalette.addTemplate("Cloud",
-                new ImageIcon(SoftwareModeling.class.getResource("/com/mxgraph/examples/swing/images/cloud.png")),
-                "ellipse;shape=cloud", 160, 120, "");
+        shapesPalette.addTemplate("硬件资源",
+                new ImageIcon(SoftwareModelingThree.class.getResource("/com/mxgraph/examples/swing/images/硬件资源.png")),
+                "roundImage;image=/com/mxgraph/examples/swing/images/硬件资源.png;yingjianshebei", 70, 70, "硬件资源");
+        shapesPalette.addTemplate("计算机资源",
+                new ImageIcon(SoftwareModelingThree.class.getResource("/com/mxgraph/examples/swing/images/计算机资源.png")),
+                "roundImage;image=/com/mxgraph/examples/swing/images/计算机资源.png;jisuanjiziyuan", 70, 70, "计算机资源");
 
-        shapesPalette.addEdgeTemplate("Straight",
-                new ImageIcon(SoftwareModeling.class.getResource("/com/mxgraph/examples/swing/images/straight.png")),
-                "straight", 120, 120, "");
+        shapesPalette.addTemplate("资源",
+                new ImageIcon(SoftwareModelingThree.class.getResource("/com/mxgraph/examples/swing/images/资源.png")),
+                "roundImage;image=/com/mxgraph/examples/swing/images/资源.png", 70, 70, "资源");
+        shapesPalette.addTemplate("进度条",
+                new ImageIcon(SoftwareModelingThree.class.getResource("/com/mxgraph/examples/swing/images/进度条.png")),
+                "roundImage;image=/com/mxgraph/examples/swing/images/进度条.png", 70, 70, "进度条");
+
+        shapesPalette.addTemplate("软件资源",
+                new ImageIcon(SoftwareModelingThree.class.getResource("/com/mxgraph/examples/swing/images/软件资源.png")),
+                "roundImage;image=/com/mxgraph/examples/swing/images/软件资源.png;ruanjianshebei", 70, 70, "软件资源");
+
+        shapesPalette.addEdgeTemplate("连接线", new ImageIcon(
+                SoftwareModelingThree.class
+                        .getResource("/com/mxgraph/examples/swing/images/vertical.png")),
+                "vertical", 100, 100, "");
+
+        shapesPalette
+                .addTemplate(
+                        "求解人员",
+                        new ImageIcon(
+                                SoftwareModelingThree.class
+                                        .getResource("/com/mxgraph/examples/swing/images/actor.png")),
+                        "shape=actor;person", 50, 50, "");
+        shapesPalette.addTemplate("或",
+                new ImageIcon(SoftwareModelingThree.class.getResource("/com/mxgraph/examples/swing/images/或.png")),
+                "roundImage;image=/com/mxgraph/examples/swing/images/或.png", 50, 50, "或");
+
+        shapesPalette.addTemplate("与",
+                new ImageIcon(SoftwareModelingThree.class.getResource("/com/mxgraph/examples/swing/images/yu.png")),
+                "roundImage;image=/com/mxgraph/examples/swing/images/yu.png", 50, 50, "与");
     }
 
     /**
@@ -483,8 +480,10 @@ public class SoftwareModeling extends BasicGraphEditor {
                         p2.setEnabled(true);
                         swRight.setProid(dir);
                         swRight.setObjid(cell.getId());
+                        String[] arrStyle = cell.getStyle().split(";");
+                        String style = arrStyle[arrStyle.length - 1];
                         // 软件资源建模界面,软件步骤
-                        if (cell.getStyle().equals("one")) {
+                        if (style.equals("one")) {
                             try {
                                 // buRight.setCellId(cell.getId());
                                 p2.setSelectedIndex(1);
@@ -523,7 +522,7 @@ public class SoftwareModeling extends BasicGraphEditor {
                             } catch (SQLException ex) {
                                 Logger.getLogger(SoftwareModeling.class.getName()).log(Level.SEVERE, null, ex);
                             }
-                        } else if (cell.getStyle().equals("two")) {
+                        } else if (style.equals("two")) {
                             try {
                                 p2.setSelectedIndex(0);
                                 swRight.getjButton1().setEnabled(true);

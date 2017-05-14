@@ -47,6 +47,7 @@ public class Softwear3 extends javax.swing.JPanel {
         jTabbedPane2.setEnabled(false);
         jButton1.setEnabled(false);
         jButton2.setEnabled(false);
+  
     }
 
     /**

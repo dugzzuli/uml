@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50703
 File Encoding         : 65001
 
-Date: 2017-05-07 22:14:51
+Date: 2017-05-14 22:37:09
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -114,21 +114,23 @@ CREATE TABLE `solutionbuild` (
   `kongqihuanjing` varchar(255) DEFAULT NULL,
   `kongjian` varchar(255) DEFAULT NULL,
   `zuzhijili` varchar(255) DEFAULT NULL,
+  `neirongmiaoshu` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of solutionbuild
 -- ----------------------------
-INSERT INTO `solutionbuild` VALUES ('1', 'null', 'null', 'null', 'null', 'null', '132465', 'null', 'null', '45645', 'null', 'null', 'null');
-INSERT INTO `solutionbuild` VALUES ('2', '78f8f70c-dc82-4794-abf7-680e043645f1', '2', '情景名称', '执行者', '输出陈国', '时间', '地点', '标准', '辅助设施', '空间', '空间', '组织激励');
-INSERT INTO `solutionbuild` VALUES ('3', 'ef735795-f964-4c16-b554-e6f15282010d', '2', 'dug', 'king', '', '', '', '', '', '', '', '');
-INSERT INTO `solutionbuild` VALUES ('4', 'ef735795-f964-4c16-b554-e6f15282010d', '3', 'dug', 'king', '7567567', '', '', '', '', '', '', '');
-INSERT INTO `solutionbuild` VALUES ('5', 'e1e4f2f9-f492-4433-af8b-49481ec2ed37', '2', '度过', '', '', '', '', '', '', '', '', '');
-INSERT INTO `solutionbuild` VALUES ('6', '244c53de-26f0-4587-acf4-cce4656754ad', '2', '大苏打', '', '', '', '', '', '', '', '', '');
-INSERT INTO `solutionbuild` VALUES ('7', '244c53de-26f0-4587-acf4-cce4656754ad', '3', '软件步骤', '', '', '', '', '', '', '', '', '');
-INSERT INTO `solutionbuild` VALUES ('8', '69424f60-2d39-482e-9138-72dfa78c7f2e', '2', '恶趣味去', '恶趣味', '特退热', '', '', '', '', '', '', '');
-INSERT INTO `solutionbuild` VALUES ('9', '69424f60-2d39-482e-9138-72dfa78c7f2e', '3', '恶趣味请问', '恶趣味去', '', '', '', '', '', '', '', '');
+INSERT INTO `solutionbuild` VALUES ('1', 'null', 'null', 'null', 'null', 'null', '132465', 'null', 'null', '45645', 'null', 'null', 'null', null);
+INSERT INTO `solutionbuild` VALUES ('2', '78f8f70c-dc82-4794-abf7-680e043645f1', '2', '情景名称', '执行者', '输出陈国', '时间', '地点', '标准', '辅助设施', '空间', '空间', '组织激励', null);
+INSERT INTO `solutionbuild` VALUES ('3', 'ef735795-f964-4c16-b554-e6f15282010d', '2', 'dug', 'king', '', '', '', '', '', '', '', '', null);
+INSERT INTO `solutionbuild` VALUES ('4', 'ef735795-f964-4c16-b554-e6f15282010d', '3', 'dug', 'king', '7567567', '', '', '', '', '', '', '', null);
+INSERT INTO `solutionbuild` VALUES ('5', 'e1e4f2f9-f492-4433-af8b-49481ec2ed37', '2', '度过', '', '', '', '', '', '', '', '', '', null);
+INSERT INTO `solutionbuild` VALUES ('6', '244c53de-26f0-4587-acf4-cce4656754ad', '2', '大苏打', '', '', '', '', '', '', '', '', '', null);
+INSERT INTO `solutionbuild` VALUES ('7', '244c53de-26f0-4587-acf4-cce4656754ad', '3', '软件步骤', '', '', '', '', '', '', '', '', '', null);
+INSERT INTO `solutionbuild` VALUES ('8', '69424f60-2d39-482e-9138-72dfa78c7f2e', '2', '恶趣味去', '恶趣味', '特退热', '', '', '', '', '', '', '', null);
+INSERT INTO `solutionbuild` VALUES ('9', '69424f60-2d39-482e-9138-72dfa78c7f2e', '3', '恶趣味请问', '恶趣味去', '', '', '', '', '', '', '', '', null);
+INSERT INTO `solutionbuild` VALUES ('10', '0808ce9e-073d-4fc1-9a79-b4c1f0154f48', '2', 'eqweqw ', 'qweqwe', '', '', '', '', '', '', '', '', 'null');
 
 -- ----------------------------
 -- Table structure for `tuwenziliao`

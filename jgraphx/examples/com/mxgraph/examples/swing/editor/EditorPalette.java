@@ -258,18 +258,18 @@ public class EditorPalette extends JPanel {
 		// Scales the image if it's too large for the library
 		// 设置图形在library中的最佳大小,以防撑爆
 		if (icon != null) {
-			if (icon.getIconWidth() > 32 || icon.getIconHeight() > 32) {
-				icon = new ImageIcon(icon.getImage().getScaledInstance(32, 32, 0));
+			if (icon.getIconWidth() > 28 || icon.getIconHeight() > 28) {
+				icon = new ImageIcon(icon.getImage().getScaledInstance(28, 28, 0));
 			}
 		}
 
 		final JLabel entry = new JLabel(icon);
-		entry.setPreferredSize(new Dimension(200, 50));
+		entry.setPreferredSize(new Dimension(200, 40));
 		entry.setBackground(EditorPalette.this.getBackground().brighter());
 		entry.setFont(new Font(entry.getFont().getFamily(), 0, 10));
 
-		entry.setVerticalTextPosition(JLabel.BOTTOM);
-		entry.setHorizontalTextPosition(JLabel.CENTER);
+//		entry.setVerticalTextPosition(JLabel.RIGHT);
+//		entry.setHorizontalTextPosition(JLabel.CENTER);
 		entry.setIconTextGap(0);
 
 		entry.setToolTipText(name);

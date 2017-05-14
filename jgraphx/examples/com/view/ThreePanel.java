@@ -43,7 +43,7 @@ public class ThreePanel extends javax.swing.JPanel {
         initComponents();
         myConstants.jTabbedPaneThree = jTabbedPane1;
         shizhidanyuanSave.setEnabled(false);
-        renyuanSave.setEnabled(true);
+        renyuanSave.setEnabled(false);
         tuwenziliaoSave.setEnabled(false);
         jisuanjiziyuanSave.setEnabled(false);
         ruanjianshebeiSave.setEnabled(false);

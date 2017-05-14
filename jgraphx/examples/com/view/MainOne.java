@@ -3,10 +3,11 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package com.view;
 
 import java.awt.Color;
+import java.awt.Container;
+import javax.swing.ImageIcon;
 
 /**
  *
@@ -19,8 +20,11 @@ public class MainOne extends javax.swing.JPanel {
      */
     public MainOne() {
         initComponents();
-     
+
     }
+    Container ct;
+    //创建背景面板。  
+    BackgroundPanel bgp;
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -31,6 +35,14 @@ public class MainOne extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+	
+
+          
+        //在这里随便找一张400*300的照片既可以看到测试结果。  
+        bgp=new BackgroundPanel((new ImageIcon("/com/mxgraph/examples/swing/images/bg.png")).getImage());  
+        bgp.setBounds(0,0,400,300);  
+        add(bgp);  
+		setOpaque(false);
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
@@ -78,6 +90,7 @@ public class MainOne extends javax.swing.JPanel {
                 .addComponent(jLabel3)
                 .addGap(43, 43, 43))
         );
+		
     }// </editor-fold>//GEN-END:initComponents
 
 
