@@ -166,7 +166,7 @@ public class SoftwareModeling extends BasicGraphEditor {
                         "图文资料",
                         new ImageIcon(
                                 SoftwareModelingThree.class
-                                        .getResource("/com/mxgraph/examples/swing/images/cloud.png")),
+                                        .getResource("/com/mxgraph/examples/swing/images/cylinder.png")),
                         "shape=cylinder", 160, 120, "图文资料");
         shapesPalette
                 .addTemplate(
